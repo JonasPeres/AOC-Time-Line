@@ -2,10 +2,12 @@ import { RouteRecordRaw } from 'vue-router';
 
 const routes: RouteRecordRaw[] = [
   {
-    path: '/AOC-Time-Line/',
+    path: '/',
     name: '',
     component: () => import('src/layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('src/pages/home/Index.vue') }],
+    children: [
+      { path: '', component: () => import('src/pages/home/Index.vue') },
+    ],
   },
 
   // Always leave this as last one,
